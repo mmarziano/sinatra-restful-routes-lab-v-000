@@ -20,7 +20,7 @@ class ApplicationController < Sinatra::Base
     erb :new
   end 
   
-  post '/recipes/new' do 
+  post '/recipes' do 
     @recipe = Recipe.new
     @recipe.name = params[:name]
     @recipe.ingredients = params[:ingredients]
